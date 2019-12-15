@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maps 1</title>
+    <script src="assets/scripts/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/main-menu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/video-page.css" />
+  </head>
+
+  <body>
+    <div id="main-menu">
+      <div class="title-bar">Navigation Tools</div>
+
+      <div class="video-row">
+        <div class="video-link video-2" onclick="goToVideoPage({title: 'Who invented the compass?', video: 'who_invented_the_compass.mp4'})">Who invented the compass?</div>
+        <div class="video-link video-2" onclick="goToVideoPage({title: 'How a compass works', video: 'how_a_compass_works.mp4'})">How a compass works</div>
+      </div>
+
+      <div class="video-row">
+        <div class="video-link video-3" onclick="goToVideoPage({title: 'World\s rarest maps', video: 'worlds_rarest_maps.mp4'})">World's rarest maps</div>
+        <div class="video-link video-3" onclick="goToVideoPage({title: 'Cartography', video: 'cartography.mp4'})">Cartography</div>
+        <div class="video-link video-3" onclick="goToVideoPage({title: 'Types of maps', video: 'types_of_maps.mp4'})">Types of maps</div>
+      </div>
+
+      <div class="tap-text">Click on a tile to watch video</div>
+    </div>
+
+    <div id="video-page">
+      <div class="title-bar">
+        <div id="back-button"></div>
+        <div id="video-title"></div>
+      </div>
+      <div class="video-container">
+        <video id="video-player"></video>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    startup()
+  </script>
+</html>
